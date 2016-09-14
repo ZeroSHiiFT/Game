@@ -1,0 +1,31 @@
+#:kivy 1.9.1
+
+
+
+<StartScreen>:
+	Label:
+		font_size: 120
+		center_x: root.width / 2
+		top: root.top - 100
+		text: "Starfire"
+
+
+
+<LoginScreen>
+	f_username: username 
+	f_password: password 
+	GridLayout:
+		rows: 2
+		padding: 5
+		spacing: 5
+		Label:
+			text: "User Name:"
+		TextInput:
+			id: username
+		Label:
+			text: 'Password'
+		TextInput:
+			id: password
+			password: True
+
+
